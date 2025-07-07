@@ -1,0 +1,262 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+header {
+  /*
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #aa8888;
+  background-color: #6e68b6bb;
+  */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #6e68b6bb;
+  border-top: 1px solid #c48080;
+}
+
+.logo {
+  /*
+  display: flex;
+  align-items: center;
+  */
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.logo img {
+  height: 65px;
+  width: auto;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+nav ul {
+  display: flex;
+  justify-content:center;
+  gap: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+nav a.activo {
+  border: 1px solid #000;
+  border-radius: 35px;
+} 
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .logo {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+
+/*comienzo main  */
+
+
+main {
+  min-height: 87.5vh;
+  padding: 1px;
+  background-color: #967aaa;
+  color: white;
+}
+
+/*pagina index*/
+
+.seccion-destacada {
+  background-color: #9c5190bb; 
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  
+}
+
+.indexmain{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.seccion-destacada h3 {
+  color: #070505;
+  font-size: 37px;
+  margin-bottom: 1rem;
+}
+
+.seccion-destacada p {
+  color: #020101;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+
+
+/*pagina actividades  */
+.actividades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.actividad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-placeholder {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+}
+
+
+/*footer */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #6e68b6bb;
+  border-top: 1px solid #c48080;
+}
+.footer-mapa {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  
+}
+.footer-mapa iframe {
+  width: 300%;
+  height: 83px;
+  border-radius: 45px;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.redes img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-mapa, .redes {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(226, 215, 215);
+  font-weight: bold;
+  padding: 15px;
+}
+.actividad-texto  {
+  text-align: center;
+  font-family: Inter,Inter Fallback;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 15px;
+}
+.actividad-texto {
+  margin-top: 15px; 
+  font-size: 1rem;
+  color: #000000;
+  text-align: justify;
+}
+
+.textoindex {
+  margin-top: 15px; 
+  font-size: 1rem;
+  color: #000000;
+  text-align: justify;
+}
+
+/* pagina contacto*/
+
+.formulario {
+  display:inline-block;
+  justify-items: center;
+  padding-left: 0; 
+}
+
+.contactomain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 81vh;
+  padding: 20px;
+  background-color: #967aaa;
+  color: white;
+}
+
+.galeriamain{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+
+
