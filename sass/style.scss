@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  box-sizing:border-box;
   margin: 0;
   padding: 0;
 }
@@ -8,7 +8,7 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
 
@@ -18,9 +18,12 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .navbar-brand {
+  
   font-size: 2rem;
   color: #fff;
+  
 }
 
 .logo-navbar {
@@ -28,6 +31,7 @@ body {
   height: 75px;
   border-radius: 50%;
 }
+
 
 .navbar-nav .nav-link {
   color: #ffffff;
@@ -47,30 +51,42 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+
+
+
+
+
+
 /*comienzo main  */
+
+
 main {
   min-height: 87.5vh;
   padding: 1px;
   background-color: #D9D6EB;
+  
 }
 
 /*pagina index*/
+
 .seccion-destacada {
-  background-color: rgba(110, 104, 182, 0.7333333333);
+  background-color: #6e68b6bb; 
   border-radius: 1rem;
   padding: 2rem;
   margin: 2rem auto;
   max-width: 1200px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+  
 }
 
-.indexmain {
+.indexmain{
   padding: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
 }
 
 .seccion-destacada h3 {
@@ -85,11 +101,15 @@ main {
   line-height: 1.6;
 }
 
+
+
 /*pagina actividades  */
+
+
 .actividad-card {
   display: flex;
   flex-direction: row;
-  background-color: rgba(110, 104, 182, 0.7333333333);
+  background-color: #6e68b6bb;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -115,7 +135,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-size: 1rem;
 }
 
@@ -123,6 +143,7 @@ main {
   font-size: 1.3rem;
   margin-bottom: 10px;
   text-align: center;
+  
 }
 
 .actividad-texto p {
@@ -134,28 +155,42 @@ main {
 /* Responsive para pantallas chicas */
 @media (max-width: 768px) {
   .actividad-card {
+    
     height: auto;
     text-align: center;
     flex-direction: row;
   }
+
   .actividad-img {
     max-width: 100%;
     height: 200px;
   }
+
   .actividad-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
+
   .actividad-texto {
     padding: 15px;
     font-size: 0.95rem;
   }
+
   .actividad-texto h5 {
     font-size: 1.1rem;
   }
 }
+
+
+
+
+
+
+
+
 /*footer */
+
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -163,14 +198,15 @@ main {
   align-items: center;
   padding: 5px 10px;
   background-color: #5a4e8c;
+  
 }
-
 .footer-mapa {
   display: flex;
   justify-content: flex-start;
   padding: 10PX;
+  
+  
 }
-
 .footer-mapa iframe {
   width: 100%;
   height: 85px;
@@ -184,7 +220,9 @@ main {
   padding: 10px;
   flex-direction: column;
   justify-content: center;
+  
   gap: 12px;
+  
 }
 
 .redes-texto {
@@ -220,25 +258,33 @@ main {
     align-items: center;
     gap: 10px;
   }
+
   .footer-mapa, .redes {
     justify-content: center;
     max-width: 400px;
     margin-bottom: 15px;
   }
-  .redes {
+.redes {
     flex-direction: column;
     align-items: center;
   }
+
   .redes-texto {
     margin-bottom: 8px;
     text-align: center;
   }
+
   .redes a {
     display: inline-flex;
     margin: 0 5px;
     margin-left: 10px;
   }
+
+  
 }
+
+
+
 h1 {
   text-align: center;
   font-size: 50px;
@@ -246,35 +292,34 @@ h1 {
   font-weight: bold;
   padding: 15px;
 }
-
-.actividad-texto {
+.actividad-texto  {
   text-align: center;
-  font-family: Inter, Inter Fallback;
+  font-family: Inter,Inter Fallback;
   font-size: 20px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   padding: 15px;
 }
-
 .actividad-texto {
-  margin-top: 15px;
+  margin-top: 15px; 
   font-size: 1rem;
   color: #000000;
   text-align: justify;
 }
 
 .textoindex {
-  margin-top: 15px;
+  margin-top: 15px; 
   font-size: 1rem;
   color: #000000;
   text-align: justify;
 }
 
 /* pagina contacto*/
+
 .formulario {
-  display: inline-block;
+  display:inline-block;
   justify-items: center;
-  padding-left: 0;
+  padding-left: 0; 
 }
 
 .contactomain {
@@ -284,35 +329,45 @@ h1 {
   flex-direction: column;
   min-height: 81vh;
   padding: 20px;
-  background-color: rgba(110, 104, 182, 0.7333333333);
+  background-color: #6e68b6bb;
   color: white;
 }
 
-/*paginagaleria  main  */
-.galeriamain {
+
+
+  /*paginagaleria  main  */
+  
+.galeriamain{
   padding: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(110, 104, 182, 0.7333333333);
+  background-color: #6e68b6bb;
+}
+.indexmain{
+  background-color: #6e68b6bb;
+}
+.mainsobremi{
+  background-color: #6e68b6bb;
 }
 
-.indexmain {
-  background-color: rgba(110, 104, 182, 0.7333333333);
-}
-
-.mainsobremi {
-  background-color: rgba(110, 104, 182, 0.7333333333);
-}
-
-.mainactividades {
-  background-color: rgba(110, 104, 182, 0.7333333333);
+.mainactividades{
+  background-color: #6e68b6bb;
 }
 
 /*  estilo main   pagina sobre mi  */
-.fondo-principal {
-  background-color: rgba(110, 104, 182, 0.7333333333);
-  color: black;
-}
 
-/*# sourceMappingURL=style.css.map */
+.fondo-principal {
+  background-color: #6e68b6bb;
+  color: black;
+} 
+
+
+
+
+
+
+
+
+
+
