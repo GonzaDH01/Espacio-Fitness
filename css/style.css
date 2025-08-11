@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* _reset.scss */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,6 +14,19 @@ body {
   font-weight: bold;
 }
 
+/* _main.scss */
+main {
+  min-height: 87.5vh;
+  padding: 1px;
+  background-color: #D9D6EB;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* _header.scss */
 .header {
   background-color: #5a4e8c;
   padding: 10px 20px;
@@ -47,115 +62,7 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/*comienzo main  */
-main {
-  min-height: 87.5vh;
-  padding: 1px;
-  background-color: #D9D6EB;
-}
-
-/*pagina index*/
-.seccion-destacada {
-  background-color: rgba(110, 104, 182, 0.7333333333);
-  border-radius: 1rem;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 1200px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.indexmain {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.seccion-destacada h3 {
-  color: #070505;
-  font-size: 37px;
-  margin-bottom: 1rem;
-}
-
-.seccion-destacada p {
-  color: #020101;
-  font-size: 19px;
-  line-height: 1.6;
-}
-
-/*pagina actividades  */
-.actividad-card {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(110, 104, 182, 0.7333333333);
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  height: 240px;
-  transition: all 0.3s ease;
-}
-
-.actividad-img {
-  flex: 1;
-  max-width: 40%;
-  overflow: hidden;
-}
-
-.actividad-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.actividad-texto {
-  flex: 2;
-  padding: 15px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: "Segoe UI", sans-serif;
-  font-size: 1rem;
-}
-
-.actividad-texto h5 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.actividad-texto p {
-  margin: 0;
-  text-align: justify;
-  line-height: 1.4;
-}
-
-/* Responsive para pantallas chicas */
-@media (max-width: 768px) {
-  .actividad-card {
-    height: auto;
-    text-align: center;
-    flex-direction: row;
-  }
-  .actividad-img {
-    max-width: 100%;
-    height: 200px;
-  }
-  .actividad-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  .actividad-texto {
-    padding: 15px;
-    font-size: 0.95rem;
-  }
-  .actividad-texto h5 {
-    font-size: 1.1rem;
-  }
-}
-/*footer */
+/* _footer.scss */
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -168,7 +75,7 @@ main {
 .footer-mapa {
   display: flex;
   justify-content: flex-start;
-  padding: 10PX;
+  padding: 10px;
 }
 
 .footer-mapa iframe {
@@ -220,7 +127,8 @@ main {
     align-items: center;
     gap: 10px;
   }
-  .footer-mapa, .redes {
+  .footer-mapa,
+  .redes {
     justify-content: center;
     max-width: 400px;
     margin-bottom: 15px;
@@ -239,28 +147,44 @@ main {
     margin-left: 10px;
   }
 }
+/* Página index */
+.seccion-destacada {
+  background-color: rgba(110, 104, 182, 0.7333333333);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.indexmain {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.seccion-destacada h3 {
+  color: #070505;
+  font-size: 37px;
+  margin-bottom: 1rem;
+}
+
+.seccion-destacada p {
+  color: #020101;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+/* Estilos generales de texto */
 h1 {
   text-align: center;
   font-size: 50px;
   color: black;
   font-weight: bold;
   padding: 15px;
-}
-
-.actividad-texto {
-  text-align: center;
-  font-family: Inter, Inter Fallback;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  padding: 15px;
-}
-
-.actividad-texto {
-  margin-top: 15px;
-  font-size: 1rem;
-  color: #000000;
-  text-align: justify;
 }
 
 .textoindex {
@@ -270,7 +194,111 @@ h1 {
   text-align: justify;
 }
 
-/* pagina contacto*/
+.indexmain {
+  background-color: rgba(110, 104, 182, 0.7333333333);
+}
+
+.mainsobremi {
+  background-color: rgba(110, 104, 182, 0.7333333333);
+}
+
+/* Página sobre mí */
+.fondo-principal {
+  background-color: rgba(110, 104, 182, 0.7333333333);
+  color: black;
+}
+
+/* Página actividades */
+.actividad-card {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(110, 104, 182, 0.7333333333);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  height: 240px;
+  transition: all 0.3s ease;
+}
+
+.actividad-img {
+  flex: 1;
+  max-width: 40%;
+  overflow: hidden;
+}
+
+.actividad-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.actividad-texto {
+  flex: 2;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1rem;
+}
+
+.actividad-texto h5 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.actividad-texto p {
+  margin: 0;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+/* Responsive actividades */
+@media (max-width: 768px) {
+  .actividad-card {
+    height: auto;
+    text-align: center;
+    flex-direction: row;
+  }
+  .actividad-img {
+    max-width: 100%;
+    height: 200px;
+  }
+  .actividad-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .actividad-texto {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+  .actividad-texto h5 {
+    font-size: 1.1rem;
+  }
+}
+.actividad-texto {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #000000;
+  text-align: justify;
+}
+
+.mainactividades {
+  background-color: rgba(110, 104, 182, 0.7333333333);
+}
+
+/* Página galería */
+.galeriamain {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(110, 104, 182, 0.7333333333);
+}
+
+/* Página contacto */
 .formulario {
   display: inline-block;
   justify-items: center;
@@ -286,33 +314,6 @@ h1 {
   padding: 20px;
   background-color: rgba(110, 104, 182, 0.7333333333);
   color: white;
-}
-
-/*paginagaleria  main  */
-.galeriamain {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: rgba(110, 104, 182, 0.7333333333);
-}
-
-.indexmain {
-  background-color: rgba(110, 104, 182, 0.7333333333);
-}
-
-.mainsobremi {
-  background-color: rgba(110, 104, 182, 0.7333333333);
-}
-
-.mainactividades {
-  background-color: rgba(110, 104, 182, 0.7333333333);
-}
-
-/*  estilo main   pagina sobre mi  */
-.fondo-principal {
-  background-color: rgba(110, 104, 182, 0.7333333333);
-  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

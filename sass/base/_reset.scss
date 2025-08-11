@@ -1,0 +1,24 @@
+/* _reset.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+/* _main.scss */
+main {
+  min-height: 87.5vh;
+  padding: 1px;
+  background-color: #D9D6EB;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

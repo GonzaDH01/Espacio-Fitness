@@ -1,0 +1,80 @@
+/* Página actividades */
+.actividad-card {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(110, 104, 182, 0.7333333333);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  height: 240px;
+  transition: all 0.3s ease;
+}
+
+.actividad-img {
+  flex: 1;
+  max-width: 40%;
+  overflow: hidden;
+}
+
+.actividad-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.actividad-texto {
+  flex: 2;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1rem;
+}
+
+.actividad-texto h5 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.actividad-texto p {
+  margin: 0;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+/* Responsive actividades */
+@media (max-width: 768px) {
+  .actividad-card {
+    height: auto;
+    text-align: center;
+    flex-direction: row;
+  }
+  .actividad-img {
+    max-width: 100%;
+    height: 200px;
+  }
+  .actividad-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .actividad-texto {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+  .actividad-texto h5 {
+    font-size: 1.1rem;
+  }
+}
+
+.actividad-texto {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #000000;
+  text-align: justify;
+}
+.mainactividades {
+  background-color: rgba(110, 104, 182, 0.7333333333);
+}

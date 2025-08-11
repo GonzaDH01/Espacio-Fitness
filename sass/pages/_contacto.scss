@@ -1,0 +1,17 @@
+/* Página contacto */
+.formulario {
+  display: inline-block;
+  justify-items: center;
+  padding-left: 0;
+}
+
+.contactomain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 81vh;
+  padding: 20px;
+  background-color: rgba(110, 104, 182, 0.7333333333);
+  color: white;
+}

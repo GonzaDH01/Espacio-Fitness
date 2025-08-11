@@ -1,0 +1,49 @@
+/* Página index */
+.seccion-destacada {
+  background-color: rgba(110, 104, 182, 0.7333333333);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.indexmain {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.seccion-destacada h3 {
+  color: #070505;
+  font-size: 37px;
+  margin-bottom: 1rem;
+}
+
+.seccion-destacada p {
+  color: #020101;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+/* Estilos generales de texto */
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+}
+.textoindex {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #000000;
+  text-align: justify;
+}
+
+.indexmain {
+  background-color: rgba(110, 104, 182, 0.7333333333);
+}
